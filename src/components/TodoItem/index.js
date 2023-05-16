@@ -12,9 +12,17 @@ const TodoItem = props => {
   return (
     <li className="todo-item">
       <p className="title">{title}</p>
-      <button type="button" className="delete-btn" onClick={onDeleteTodo}>
-        Delete
-      </button>
+      <div>
+        <button type="button" className="delete-btn" onClick={onDeleteTodo}>
+          Completed
+        </button>
+        <button type="button" className="delete-btn" onClick={onDeleteTodo}>
+          Pending
+        </button>
+        <button type="button" className="delete-btn" onClick={onDeleteTodo}>
+          Delete
+        </button>
+      </div>
     </li>
   )
 }
